@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+ <title>Generatore di corrente alternata, Studio di funzione e Media integrale </title>
+ <link rel="stylesheet" href="../Codice/Css.css">
+ 
+</head>
+
+<body>
+	 <div class="Barra">
+ 		<a href="../index.html" ><img src="../Immagini/home.png" alt="home" title="Home" class="Bottone"></a>
+		<img src="../Immagini/spazio.png" alt="spazio">
+		<a href="Fem.html" ><img src="../Immagini/fem.png" alt="fem" title="Studio sulla fem indotta" class="Bottone"></a>
+		<img src="../Immagini/spazio.png" alt="spazio">
+		<a href="Corrente.html" ><img src="../Immagini/corrente.png" alt="corrente" title="Studio sulla corrente indotta" class="Bottone"></a>
+		<img src="../Immagini/spazio.png" alt="spazio">
+		<a href="../Generatore di corrente alternata, Studio di funzione e Media integrale.pdf" target="_blank"><img src="../Immagini/doc.png" alt="doc" title="Versione compatta" class="Bottone"></a>
+		<img src="../Immagini/spazio.png" alt="spazio">
+	</div>
+<div class="Home"> 
+	<h1 style="padding:30px 0px 40px 0px;"><i>Calcolo della corrente indotta I(t) e calcolo del valore efficace tramite media integrale</i></h1> 
+	<h2 class="Titolodim">Tesi:</h2>
+	<br>
+	<p class="testodim">Il generatore di forza elettromotrice alternata viene collegato ad un circuito di resistenza R</p>
+	<br>
+	<h2 class=Titolodim">Calcolo dell’espressione analitica della corrente indotta nel circuito</h2>
+	<br>
+	<p class="testodim">Secondo la prima legge di Ohm la differenza di potenziale V agli estremi di un filo percorso da corrente è
+	direttamente proporzionale alla corrente. La costante di proporzionalità tra i due valori è R, la resistenza del filo, e quindi
+	si ottiene che V=IR<br>A questo punto dato che V=𝜀 si uò sostituire V nella formula ottenendo 𝜀=IR e poi I=𝜀R dividendo entrambi
+	i lati dell'equazione per R.<br> Se ora si sostituisce alla 𝜀 le formule ottenute <a href="Fem.html">nella pagina precedente</a> si ottiene:</p>
+	<br>
+	<div class="Equazione"><img src="../Immagini/Correntemedist.PNG" class="Equazioneimm"></div>
+	
+	<h2 class="Titolodim">Dimostrazione che, nel periodo di oscillazione completa, il valore efficace della corrente è pari al valore
+	massimo della corrente diviso &#8730 2</h2>
+	<br>
+	<p class="testodim">Come dimostrato nella sezione precedente il valore della corrente dipende da una variabile, 𝜀, e da una
+	costante, 1/R.<br>La funzione 𝜀 è una funziona periodica e per calcolarne la funziona si può utilizzare la tecnica del calcolo della
+	media integrale applicata all'intervallo [0,2𝜋/ω], intervallo in cui sin(ωt) compie un giro completo.<br>Dato che la funzione cambia di
+	segno a metà di questo intervallo, per non calcolare un valore nullo elevo tutto al quadrato, in modo da avere solo valori positivi, e
+	alla fine poi basterà ritrasformare tutto mettendo il risultato sotto radice.</p>
+	<br>
+	<div class="Equazione"><img src="../Immagini/Integrale1.PNG" class="Equazioneimm"></div>
+	<p class="testodim">In questi primi passaggi, dopo aver scritto la formula, ho portato fuori le costanti N<sup>2</sup> 
+	B<sup>2</sup> e ω (non alla seconda per motivi che saranno chiari dopo).<br>A questo punto sostituisco a ωt il valore x,
+	cambiando anche dt con il rapporto tra dx e la derivata di ωt rispetto a t, ovvero ω: </p>
+	<br>
+	<div class="Equazione"><img src="../Immagini/Integrale2.PNG" class="Equazioneimm"></div>
+	<p class="testodim">Applico a questo punto le formule di duplicazione:</p>
+	<br>
+	<div class="Equazione"><img src="../Immagini/Integrale3.PNG" class="Equazioneimm"></div>
+	<p class="testodim">Ottenuto il risultato basta mettere tutto sotto radice e sostituire nell'equazione della corrente
+	indotta per ottenere il risultato:</p>
+	<br>
+	<div class="Equazione"><img src="../Immagini/Integrale4.PNG" class="Equazioneimm"></div>
+
+	<p class="testodim">Osservando questo risultato si può notare che il valore NABω / R in realtà è proprio il valore massimo della
+	corrente indotta, ottenuto dal valore massimo della forza elettromagnetica indotta (NBAω) per la costante 1/R e in questo modo
+	si ottiene che il valore medio o efficace della corrente è proprio:</p>
+	<br>
+	<div class="Equazione"><img src="../Immagini/Integrale5.PNG" class="Equazioneimm"></div>
+
+	<h2 class="Titolodim">Fine</h2>
+
+<div style="height:50px"></div>
+</div>
+<script src="Java.js"></script>
+</body>
+
+</html>

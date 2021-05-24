@@ -1,0 +1,103 @@
+*{
+	margin:0;
+	padding:0;
+}
+h1{
+	font-size:40px;
+}
+h2{
+	font-size:30px;
+}
+body{
+	height:100%;
+	width:100%;
+}
+p{
+	font-size:20px;
+}
+.Home{
+	position: relative;
+	height: 100%;
+  	width: 100%;
+	margin:auto;
+	margin-top:0;
+	margin-bottom:0;
+	z-index:0;
+	background: rgb(217, 219, 222);
+	text-align:center;
+}
+
+.Barra{
+	position: -webkit-sticky;
+	position:sticky;
+	width:100%
+	max-heigh:100 px;
+	background: rgb(57, 58, 59);
+	top: 0;
+	z-index:1;
+	margin:0;
+	text-color:white;
+}
+
+.Collegamento{
+	
+}
+
+.Bottone:hover{
+	 transform: scale(1.1);
+}
+.Collega{
+	width:75%;
+	height:auto;
+
+}
+.Collega:hover{
+	 transform: scale(1.1);
+}
+
+
+.Icona{
+	padding-top:100px;
+	padding-bottom:40px;
+	width:30%;
+	height:auto;
+	margin:auto;
+	display:inline-block;
+}
+
+.Icona2{
+	padding-top:20px;
+	padding-bottom:40px;
+	width:45%;
+	height:auto;
+	margin:auto;
+	display:inline-block;
+}
+
+.ImgBot{
+	max-width:200px;
+	height:auto;
+}
+
+.testodim{
+	max-width:85%;
+	margin:auto;
+}
+
+.Equazione{
+	width:80%;
+	margin:auto;
+	text-align: center;	
+}
+
+.Titolidim{
+	max-width:85%;
+	margin:auto
+}
+
+.Equazioneimm{
+	width:60%;
+	min-width:400px;
+	height:auto;
+
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+ <title>Generatore di corrente alternata, Studio di funzione e Media integrale </title>
+ <link rel="stylesheet" href="../Codice/Css.css">
+ 
+</head>
+
+<body>
+	 <div class="Barra">
+ 		<a href="../index.html" ><img src="../Immagini/home.png" alt="home" title="Home" class="Bottone"></a>
+		<img src="../Immagini/spazio.png" alt="spazio">
+		<a href="Fem.html" ><img src="../Immagini/fem.png" alt="fem" title="Studio sulla fem indotta" class="Bottone"></a>
+		<img src="../Immagini/spazio.png" alt="spazio">
+		<a href="Corrente.html" ><img src="../Immagini/corrente.png" alt="corrente" title="Studio sulla corrente indotta" class="Bottone"></a>
+		<img src="../Immagini/spazio.png" alt="spazio">
+		<a href="../Generatore di corrente alternata, Studio di funzione e Media integrale.pdf" target="_blank"><img src="../Immagini/doc.png" alt="doc" title="Versione compatta" class="Bottone"></a>
+		<img src="../Immagini/spazio.png" alt="spazio">
+	</div>
+<div class="Home"> 
+	<h1 style="padding:30px 0px 40px 0px;"><i>Calcolo della forza elettromotrice indotta 𝜀(t) nella spira </i></h1> 
+	<h2>Tesi:</h2>
+	<br>
+	<p class="testodim">All’istante t=0s l’angolo tra la normale della spira e il campo magnetico costante B è θ=0°.<br>La spira presenta un'area di dimensioni A e viene fatta roteare con una velocità angolare costante ω intorno al suo asse.</p>
+	<br>
+	<h2 class="Titolidim">Dimostrazione che l'angolo ad un istante t è uguale alla velocità angolare per il tempo<br>θ(t) = ωt</h2>
+	<br>
+	<p class="testodim">La velocità angolare ω è per definizione il rapporto tra lo spostamento angolare Δ𝜃 e la variazione
+	di tempo Δt.<br>Ora, sapendo che la variazione dell'angolo è data dall'angolo finale 𝜃(t) meno l'angolo iniziale 𝜃<sub>0</sub> che è zero (per tesi) e sapendo
+	anche che lo stesso vale per il tempo, ovvero Δt è il tempo finale t meno il tempo iniziale, 0 (sempre per tesi), si ha che la velocità angolare è ω = 𝜃(t) / t<br>
+	A questo punto con un paio di calcoli si ottiene il risultato desiderato:</p>
+		
+	<div class="Equazione"><img src="../Immagini/Formulavelocitaang.PNG" class="Equazioneimm"></div>
+	
+	<h2 class="Titolidim">Dimostra che il flusso del campo magnetico attraverso la spira è uguale al prodotto tra l'area della spira
+	il campo magnetico che la attraversa e il coseno della velocità angolare per il tempo.<br>Φ(B)=ABcos(ωt)</h2>
+	<br>
+	<p class="testodim">Il flusso di campo magnetico Φ(B) è per definizione la misura della quantità di campo magnetico B che attraversa una cera
+	area A.<br>Nel caso di una spira immobile per misurare questo valore basta fare il prodotto scalare tra il vettore del campo magnetico e il 
+	vettore dell'area, moltiplicando quindi i moduli per il coseno dell'angolo compreso, 𝜃.<br>Dato però che la spira è in movimento questo
+	angolo varia nl tempo e, utilizzando la formula dimostrata prima, si arriva al risultato desiderato:</p>
+	
+	<div class="Equazione"><img src="../Immagini/FormulaFlusso.PNG" class="Equazioneimm"></div>
+
+	<h2 class="Titolidim">Calcolo della forza elettromotrice indotta tramite la legge di Farady-Neuman</h2>
+	<br>
+	<p class="testodim">Secondo la legge di Faraday-Neumann la forza elettromagnetica indotta 𝜀(t)è proporzionale al numero
+	di avvolgimenti N intorno alla spira e alla rapidità di variazione del flusso del campo magnetico attraverso la spira nel tempo.<br>
+	si ha di conseguenza che:</p>
+	<div class="Equazione"><img src="../Immagini/FormulaFaraday1.PNG" class="Equazioneimm"></div>
+	<p class="testodim">Il segno negativo nell'equazione ha il compito di indicare che la fem indotta tende ad opporsi al flusso
+	del campo magnetico.<br>Quando in queste ultime righe mi sono riferito alla fem indotta in realtà mi stavo riferendo al valore
+	medio in un intervallo di tempo.<br>Per ottenere il valore istantaneo è necessario cercare il valore in un intervallo di tempo infinitesimo
+	e per fare ciò si usa la derivata, il limite del rapporto incrimentale di una funzione in un punto al tendere dell'incremento a zero.
+	<br>Bisogna quindi derivare il flusso in funzione del tempo utilizzando il metodo delle derivate composte:</p>
+
+	<div class="Equazione"><img src="../Immagini/FormulaFaraday2.PNG" class="Equazioneimm"></div>
+
+	<h2 class="Titolidim">Rappresentazione della funzione ottenuta sul piano cartesiano e motivazione per l'aggettivo
+	alternata di questa forza elettromotrice alternata</h2>
+	<br>
+	<p class="testodim">Per rappresentare la funzione sul grafico ho utilizzato dei valori scelti casualmente per l'area (2m), per il campo
+	magnetico (2 T), per il numero di spire (1) e per la velocità angolare (1.5 rad/s) dato che il tempo è l'unica variabile dell'equazione.</p>
+	<br>
+	<div style="margin:auto;">
+		<video width="600px" height="auto" controls>
+ 		<source src="../Immagini/Grafico.mp4" type="video/mp4">
+		</video>
+	</div>	
+	<br>
+	<p class="testodim">Come si può osservare nel grafico la funzione periodicamente cambia segno, più precisamente ogni t=ω/𝜋 (dato che 
+	la funzione seno cambia di segno ogni θ=𝜋 e quindi ogni ωt=𝜋), e per questo motivo viene chiamata "alternata".<br>La funzione inoltre
+	avrà dei massimi e dei minimi quando la funzione seno sarà a 1 (per i massimi) o a -1 (per i minimi) e i valori massimi e minimi sono
+	rispettivamente NBAω e -NBAω</p>
+	<br>
+	
+	<h2 class="Titolodim">Per proseguire alla prossima parte fare click sull'immagine sottostante:</h2>
+	<div class="Icona2">
+		<a href="Corrente.html" ><img src="../Immagini/correntehd.png" alt="corrente hd" title="Studio sulla fem indotta" class="Bottone"></a>
+	</div>
+<div style="height:50px"></div>
+</div>
+<script src="Java.js"></script>
+</body>
+
+</html>
