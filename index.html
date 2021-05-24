@@ -5,7 +5,6 @@
 <head>
  <title>Generatore di corrente alternata, Studio di funzione e Media integrale </title>
  <link rel="stylesheet" href="Codice/Css.css">
- 
 </head>
 
 <body>
@@ -28,23 +27,33 @@
 		calcoli e dimostrazioni relativi alla forza elettromotrice indotta e calcoli e dimostrazioni 
 		relativi alla corrente indotta.
 		<br>Per navigare sul sito sarà sempre presente una barra in alto per poter spostarsi comodamente
-		tra le principali pagine.<br>Oltre alle pagine per la forza elettromotrice 𝜀(t) e per la corrente
-		indotta I(t) gli altri due simboli portano a questa pagina e ad una pagina dove si potrà vedere
-		tutto il lavoro scritto in pdf.
+		tra le principali pagine. Oltre alle pagine per la forza elettromotrice (𝜀(t)) e per la corrente
+		indotta (I(t)) gli altri due simboli portano a questa pagina e ad una pagina dove si potrà vedere
+		tutto il lavoro scritto in formato pdf.
 		<br>In questa pagina si possono trovare, oltre ai tre collegamenti per raggiungere le altre pagine
-		note gli strumenti utilizzati per creare questo lavoro.</p>
+		note una piccola animazione che può essere fatta partire premendo la leva e i link per raggiungere
+		le pagine degli sviluppatori degli strumenti utilizzati per creare questo lavoro.</p>
 	</div>
 	<div class="Icona">
-		<a href="Html/Fem.html" ><img src="Immagini/femhd.png" alt="fem hd" title="Studio sulla fem indotta" class="Bottone"></a>
+		<a href="Fem.html" ><img src="Immagini/femhd.png" alt="fem hd" title="Studio sulla fem indotta" class="Bottone"></a>
 	</div>
 	<div class="Icona">
-		<a href="Html/Corrente.html" ><img src="Immagini/correntehd.png" alt="corrente hd" title="Studio sulla fem indotta" class="Bottone"></a>
+		<a href="Corrente.html" ><img src="Immagini/correntehd.png" alt="corrente hd" title="Studio sulla fem indotta" class="Bottone"></a>
 	</div>
 	<div class="Icona">
-		<a href="Generatore di corrente alternata, Studio di funzione e Media integrale.pdf" target="_blank"><img src="Immagini/dochd.png" alt="doc hd" title="Studio sulla fem indotta" class="Bottone"></a>
+		<a href="Generatore di corrente alternata, Studio di funzione e Media integrale.pdf"><img src="Immagini/Dochd.png" target="_blank" alt="doc hd" title="Studio sulla fem indotta" class="Bottone"></a>
 	</div>
 
 	<hr style="padding:30px">
+
+	<div style="width:95%;margin:auto;">
+	<h1>Premendo l'interruttore si può far partire o fermare l'animazione</h1>
+	<input type="image" id="Interruttore" src="Immagini/Off.jpg" style="margin:auto;" alt="onOff" onclick="iniziaFerma()"></input>
+	<br>
+	<video id="Motore" style="width:95%;max-width:1000px;height:auto;" loop>
+ 		<source src="Immagini/GenBello.mp4" type="video/mp4">
+	</video>
+	</div>
 
 	<div style="width:80%;margin:auto;text-align:center; padding-top:80px;">
 		<h1>Programmi utilizzati:</h1>
@@ -56,9 +65,10 @@
 	</div>
 
 
+
 <div style="height:50px"></div>
 </div>
-<script src="Java.js"></script>
+<script src="Codice/JavaScript.js"></script>
 </body>
 
 </html>
